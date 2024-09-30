@@ -1,0 +1,129 @@
+body{
+    min-height: 120vh;
+    min-width:100%;
+/*vh medida para aumentar o tamanho da pág.*/
+  background-image: url('../image/photo-1476514525535-07fb3b4ae5f1.jpg'); 
+   background-repeat: no-repeat;
+   background-size:contain; 
+   width: 100%;
+   height: 648px;
+  margin: -8px;
+
+
+}
+/*
+img{
+    background-repeat: no-repeat;
+    background-size:contain; 
+    width: 100%;
+    height: 648px;
+   margin: -8px;
+}
+*/
+.header{
+  width: 100%;
+  background-color: black;
+}
+
+button{
+    display: flex;
+    align-items: flex-end;
+}
+
+.pai{
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+   max-width: 100%;
+   margin: 50px;
+
+}
+
+.filhos{
+    display: flex;
+     margin: 20px;
+    justify-content: space-around;
+    padding: 17px;
+    border-radius: 10px;
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    border: 3px solid black;
+   overflow: break-word;
+   font-family: Arial, Helvetica, sans-serif;
+   font-size: 15px;
+   font-weight: bold;
+   text-align: justify;
+   margin: 0 auto;
+   /* position: relative ;*/
+}
+
+@media (max-width: 980px) {
+body{
+    width: 100%;
+    height: 100%;
+}
+
+}
+
+
+
+        @media (max-width: 768px) {
+
+
+            #secao {
+                flex-direction: column;
+                /*Coloca as secoes em colunas de telas pequenas*/
+
+            }
+
+            section {
+                width: 100%;
+                /*cada secao ocupa toda a largura*/
+                margin: 5px 0;
+                /*reduz o espaçamento entre as secoes*/
+            }
+
+            button {
+                width: 100%;
+                left: 0;
+                /*alinha os botoes*/
+                bottom: 0;
+                /*ajuste se necessario*/
+                text-align: center;
+                /*centraliza o texto nos botoes*/
+            }
+
+            footer {
+                text-align: center;
+                padding: 10px;
+                background: rgba(0, 162, 255, 0.829);
+            }
+
+
+
+            /*largura da tela em 768px*/
+
+
+        }
+
+@media (max-width: 785px) {
+    .pai{
+        width: 100%;
+        flex-direction: column;
+        align-items: space-around;
+    }
+
+.filhos{
+margin: 10px;
+width: 180px;
+height: 180px;
+font-size: 13px;
+}
+
+}
+
+
+
+          
+        
